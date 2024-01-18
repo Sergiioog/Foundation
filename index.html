@@ -1,167 +1,211 @@
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="css/app.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike Store | Welcome</title>
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <h1>Welcome to Foundation</h1>
+
+    <!-- Start Top Bar -->
+    <div class="top-bar ">
+      <div class="row">
+        <div class="top-bar-left">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="menu-text">Nike Store</li>
+            <li class="has-submenu">
+              <a href="#">Modelos</a>
+              <ul class="submenu-menu-vertical" data-submenu>
+                <li><a href="#">Air Max</a></li>
+                <li><a href="#">React</a></li>
+                <li><a href="#">Free Run</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Marcas</a></li>
+            <li><a href="#">Promociones</a></li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu">
+            <li><input type="search" placeholder="Buscar" class="search"></li>
+            <li><button type="button" class="button">Buscar</button></li>
+          </ul>
         </div>
       </div>
+    </div>
+    <!-- End Top Bar -->
+    <br>
+    <!-- You can now combine a row and column if you just need a 12 column row -->
+    <div class="row columns">
+      <nav aria-label="You are here:" role="navigation">
+        <ul class="breadcrumbs">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Características</a></li>
+          <li class="disabled">Tecnología</li>
+          <li>
+            <span class="show-for-sr">Actual: </span> ComfortFit
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <div class="callout">
-            <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-            <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-            <p>Once you've exhausted the fun in this document, you should check out:</p>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 medium-push-2 cell">
-                <p><a href="https://get.foundation/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-              </div>
-              <div class="large-4 medium-4 medium-push-2 cell">
-                <p><a href="https://github.com/foundation/foundation-emails/discussions">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 medium-push-2 cell">
-                <p><a href="https://github.com/foundation/foundation-sites">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-              </div>
-              <div class="large-4 medium-4 medium-pull-2 cell">
-                <p><a href="https://twitter.com/FoundationCSS">@FoundationCSS</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it.</p>
-              </div>
-            </div>
+    <div class="row">
+      <div class="medium-6 columns">
+        <img class="thumbnail" src="assets/1.webp">
+        <div class="row small-up-4">
+          <div class="column">
+            <img class="thumbnail" src="assets/2.webp">
+          </div>
+          <div class="column">
+            <img class="thumbnail" src="assets/3.jpeg">
+          </div>
+          <div class="column">
+            <img class="thumbnail" src="assets/4.jpeg">
+          </div>
+          <div class="column">
+            <img class="thumbnail" src="assets/5.jpeg">
           </div>
         </div>
       </div>
+      <div class="medium-6 large-5 columns">
+        <h3>Nike Air Max</h3>
+        <p>Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in.</p>
 
-      <div class="grid-x grid-padding-x">
-        <div class="large-8 medium-8 cell">
-          <h5>Here&rsquo;s your basic grid:</h5>
-          <!-- Grid Example -->
+        <label>Talla
+        <select>
+          <option value="husker">38</option>
+          <option value="starbuck">39</option>
+          <option value="hotdog">40</option>
+          <option value="apollo">41</option>
+        </select>
+        </label>
 
-          <div class="grid-x grid-padding-x">
-            <div class="large-12 cell">
-              <div class="primary callout">
-                <p><strong>This is a twelve cell section in a grid-x.</strong> Each of these includes a div.callout element so you can see where the cell are - it's not required at all for the grid.</p>
-              </div>
-            </div>
+        <div class="row">
+          <div class="small-3 columns">
+            <label for="middle-label" class="middle">Cantidad</label>
           </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
+          <div class="small-9 columns">
+            <input type="text" id="middle-label" placeholder="Uno, dos, tres...">
           </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-          </div>
-
-          <hr />
-
-          <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-          <form>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-12.cell" />
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <div class="grid-x">
-                  <label>Input Label</label>
-                  <div class="input-group">
-                    <input type="text" placeholder="small-9.cell" class="input-group-field" />
-                    <span class="input-group-label">.com</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Select Box</label>
-                <select>
-                  <option value="husker">Husker</option>
-                  <option value="starbuck">Starbuck</option>
-                  <option value="hotdog">Hot Dog</option>
-                  <option value="apollo">Apollo</option>
-                </select>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-6 medium-6 cell">
-                <label>Choose Your Favorite</label>
-                <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-                <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-              </div>
-              <div class="large-6 medium-6 cell">
-                <label>Check these out</label>
-                <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Textarea Label</label>
-                <textarea placeholder="small-12.cell"></textarea>
-              </div>
-            </div>
-          </form>
         </div>
 
-        <div class="large-4 medium-4 cell">
-          <h5>Try one of these buttons:</h5>
-          <p><a href="#" class="button">Simple Button</a><br/>
-          <a href="#" class="success button">Success Btn</a><br/>
-          <a href="#" class="alert button">Alert Btn</a><br/>
-          <a href="#" class="secondary button">Secondary Btn</a></p>
-          <div class="callout">
-            <h5>So many components, girl!</h5>
-            <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-            <a href="https://get.foundation/sites/docs/" class="small button">Go to Foundation Docs</a>
+        <a href="#" class="button large expanded">Comprar Ahora</a>
+
+        <div class="small secondary expanded button-group">
+            <a class="button1">Facebook</a>
+            <a class="button1">Twitter</a>
+            <a class="button1">Instagram</a>
+          </div>
+        </div>
+    </div>
+
+    <div class="column row">
+      <hr>
+      <ul class="tabs" data-tabs id="example-tabs">
+        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Reseñas</a></li>
+        <li class="tabs-title"><a href="#panel2">Productos Similares</a></li>
+      </ul>
+      <div class="tabs-content" data-tabs-content="example-tabs">
+        <div class="tabs-panel is-active" id="panel1">
+          <h4>Reseñas</h4>
+          <div class="media-object stack-for-small">
+            <div class="media-object-section">
+              <img class="thumbnail" src="assets/6.webp">
+            </div>
+            <div class="media-object-section">
+              <h5>Carlos Martínez</h5>
+              <p>Las Air Max se han convertido en mi elección diaria. La amortiguación y el soporte que ofrecen son excepcionales. ¡Realmente elevan mi estilo!</p>
+            </div>
+          </div>
+          <div class="media-object stack-for-small">
+            <div class="media-object-section">
+              <img class="thumbnail" src="assets/7.webp">
+            </div>
+            <div class="media-object-section">
+              <h5>Isabel Torres</h5>
+              <p>Increíblemente cómodas y con un diseño que destaca. Estas Air Max son perfectas para cualquier actividad, desde el gimnasio hasta un día de compras.</p>
+            </div>
+          </div>
+          <div class="media-object stack-for-small">
+            <div class="media-object-section">
+              <img class="thumbnail" src="assets/8.jpeg">
+            </div>
+            <div class="media-object-section">
+              <h5>Pablo Herrera</h5>
+              <p>Las Air Max son mucho más que zapatillas deportivas, son una declaración de estilo. No puedo dejar de recibir elogios cada vez que las uso.</p>
+            </div>
+          </div>
+          <div class="media-object stack-for-small">
+            <div class="media-object-section">
+              <img class="thumbnail" src="assets/9.jpeg">
+            </div>
+            <div class="media-object-section">
+              <h5>Ana Ramírez</h5>
+              <p>Estoy enamorada de mis Air Max. La durabilidad y la moda se combinan perfectamente en este calzado. Definitivamente, una compra que vale la pena.</p>
+            </div>
+          </div>
+          
+          </div>
+          <label>
+            Mi Reseña
+            <textarea placeholder="Escribe tu reseña aquí"></textarea>
+          </label>
+          <a href="#" class="button large expanded">Comprar Ahora</a>
+        </div>
+        <div class="tabs-panel" id="panel2">
+          <div class="row medium-up-3 large-up-5">
+            <div class="column">
+              <img class="thumbnail" src="https://placehold.it/350x200">
+              <h5>Otro Modelo <small>$22</small></h5>
+              <p>En condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam.</p>
+              <a href="#" class="button large expanded">Comprar Ahora</a>
+            </div>
+            <div class="column">
+              <img class="thumbnail" src="https://placehold.it/350x200">
+              <h5>Otro Modelo <small>$22</small></h5>
+              <p>En condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam.</p>
+              <a href="#" class="button large expanded">Comprar Ahora</a>
+            </div>
+            <div class="column">
+              <img class="thumbnail" src="https://placehold.it/350x200">
+              <h5>Otro Modelo <small>$22</small></h5>
+              <p>En condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam.</p>
+              <a href="#" class="button large expanded">Comprar Ahora</a>
+            </div>
+            <div class="column">
+              <img class="thumbnail" src="https://placehold.it/350x200">
+              <h5>Otro Modelo <small>$22</small></h5>
+              <p>En condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam.</p>
+              <a href="#" class="button large expanded">Comprar Ahora</a>
+            </div>
+            <div class="column">
+              <img class="thumbnail" src="https://placehold.it/350x200">
+              <h5>Otro Modelo <small>$22</small></h5>
+              <p>En condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam.</p>
+              <a href="#" class="button large expanded">Comprar Ahora</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/what-input/dist/what-input.js"></script>
-    <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
-    <script src="js/app.js"></script>
+    <div class="row column">
+      <hr>
+      <ul class="menu">
+        <li>Nike Store</li>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Acerca de Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li class="float-right">Nike 2024</li>
+      </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
   </body>
 </html>
